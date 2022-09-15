@@ -5,6 +5,7 @@ main {
     .advice-card {
       @include breakpoint(medium) {
         height: rem(332);
+        width: rem(540);
       }
       width: 100%;
       background-color: $darkgrayish;
@@ -22,14 +23,17 @@ main {
         letter-spacing: rem(5);
       }
       .advice {
-        @include breakpoint(medium) {
-          font-size: rem($fontsize);
+        span {
+          @include breakpoint(medium) {
+            font-size: rem($fontsize);
+          }
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 1.5;
+          color: $cyan;
+          margin-top: rem(24);
+          transition: all 0.56s step-end;
         }
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 1.5;
-        color: $cyan;
-        margin-top: rem(24);
       }
       .divider {
         margin-top: rem(24);
