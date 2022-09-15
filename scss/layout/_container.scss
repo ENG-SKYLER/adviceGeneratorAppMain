@@ -1,0 +1,9 @@
+@use "../util/index2" as *;
+
+.container {
+  width: rem(343);
+  margin: 0 auto;
+  @include breakpoint(medium) {
+    width: rem(540);
+  }
+}

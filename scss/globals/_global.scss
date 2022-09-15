@@ -1,0 +1,10 @@
+@use "../util/index2" as *;
+
+body {
+  font-family: $family;
+  background-color: $darkblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
